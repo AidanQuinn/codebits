@@ -16,3 +16,6 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 
      Script by Thomas Kuilman to replot a gene set enrichment analysis (GSEA) plot using the original gsea output. Makes a pretty pdf that can be modified in illustrator/Gimp.
 
+4. counts_to_TPM.R
+
+    Convert raw counts (e.g. from featureCounts) to transcripts per million (TPM)
