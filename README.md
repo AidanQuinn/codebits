@@ -19,3 +19,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 4. counts_to_TPM.R
 
     Convert raw counts (e.g. from featureCounts) to transcripts per million (TPM)
+
+5. matrix_to_GCT.R
+    
+    R function which writes (or converts and returns for testing) a gene expression matrix in a GCT format for use in GenePattern or GSEA analysis. Gene expression matrix should have rows and columns labled, though it's not required. 
