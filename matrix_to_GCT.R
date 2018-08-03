@@ -1,7 +1,7 @@
 # Function to convert gene-expression matrix into GCT format
 
 matrix_to_GCT <- function(M, file_name = "",
-                          columns_named = T, rows_named = T, descriptions = NA){
+                          columns_named = T, rows_named = T, descriptions = null){
   # Get vector of gene names
   if(rows_named == T ){
     genes = rownames(M)
@@ -24,7 +24,7 @@ matrix_to_GCT <- function(M, file_name = "",
   i = ncol(M)
   
   # Make vector of descriptions if not provided
-  if(is.na(descriptions)){
+  if(is.null(descriptions)){
     cat("Using dummy value for description")
     descriptions <- rep(".", n)
   }
