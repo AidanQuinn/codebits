@@ -1,7 +1,7 @@
 # Function to convert gene-expression matrix into GCT format
 
 matrix_to_GCT <- function(M, file_name = "",
-                          columns_named = T, rows_named = T, descriptions = null){
+                          columns_named = T, rows_named = T, descriptions = NULL){
   # Get vector of gene names
   if(rows_named == T ){
     genes = rownames(M)
