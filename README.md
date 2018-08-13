@@ -27,3 +27,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 6. sortFastq.sh
 
     One liner used to sort fastq files by name.
+
+7. fastq_from_GSM.sh
+    
+    Download fastq files from GEO using a list of GSM identifiers.
