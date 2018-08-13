@@ -10,6 +10,6 @@ GSMs=`cat $GSM_LIST|cut -f1`
 for GSM in $GSMs; do
   echo $GSM retrieves from NCBI GEO.....
   SRR=`esearch -db sra -query $GSM |efetch -format docsum |xtract -pattern DocumentSummary -element Run@acc`
-  fastq-dump -A $SRR -O sra_fastq
+  fastq-dump -A $SRR -O sra_fastq --split-files --gzip
   echo fastq-dump done.....
 done
