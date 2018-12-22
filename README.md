@@ -31,3 +31,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 7. fastq_from_GSM.sh
     
     Download fastq files from GEO using a list of GSM identifiers.
+    
+8. plot_google_scholar.r
+    
+    Script used to generate Google Scholar Citations plot (http://aidanquinn.net/publications.html)
