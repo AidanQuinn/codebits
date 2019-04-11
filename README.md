@@ -35,3 +35,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 8. plot_google_scholar.r
     
     Script used to generate Google Scholar Citations plot (http://aidanquinn.net/publications.html)
+    
+9. get_GEO_fastq.sh
+
+    Retrieve fastq files in gz format (splitting PE reads into 2 files) from GEO. Usage: get_GEO_fastq.sh [[[-f SRR_file] [-o output_directory]] | [-h]], where SRR_file is a text file with one SRR sample number per line (accession list downloaded from GEO)
