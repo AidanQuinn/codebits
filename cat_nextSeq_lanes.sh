@@ -17,6 +17,6 @@
 
  # Read samples file and concatonate lanes
  while IFS= read -r SAMPLE || [[ -n "$SAMPLE" ]]; do
-     cat ./*${SAMPLE}*_R1_001.fastq.gz > ${SAMPLE}_R1.fastq.gz
-     cat ./*${SAMPLE}*_R2_001.fastq.gz > ${SAMPLE}_R2.fastq.gz
+     cat */*${SAMPLE}*_R1_001.fastq.gz > ${SAMPLE}_R1.fastq.gz
+     cat */*${SAMPLE}*_R2_001.fastq.gz > ${SAMPLE}_R2.fastq.gz
  done < $SAMPLES_FILE
