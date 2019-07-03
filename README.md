@@ -39,3 +39,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 9. get_GEO_fastq.sh
 
     Retrieve fastq files in gz format (splitting PE reads into 2 files) from GEO. Usage: get_GEO_fastq.sh [[[-f SRR_file] [-o output_directory]] | [-h]], where SRR_file is a text file with one SRR sample number per line (accession list downloaded from GEO)
+
+10. cat_nextSeq_lanes.sh
+    
+    Provided a file with sample IDs (one on each line), this script will search the current directory for nextSeq fastq files and concatonate all 4 lanes corresponding to each sample into a single file (per read).
