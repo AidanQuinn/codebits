@@ -43,3 +43,7 @@ Snippets of code useful in bioinformatics that I wrote or have collected from ar
 10. cat_nextSeq_lanes.sh
     
     Provided a file with sample IDs (one on each line), this script will search the current directory for nextSeq fastq files and concatonate all 4 lanes corresponding to each sample into a single file (per read).
+
+11. fastq_extract_id.sh
+    
+    Finds and extracts reads with barcode specified on the command line. Can tolerate up to 1 mismatch in the barcode ID sequence.
