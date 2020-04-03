@@ -21,10 +21,13 @@ annotation <- sprintf(
 # Save path
 file_name <- "/Users/Aidan/Dropbox/Public/web/scholar_citations_HRot1M8AAAAJ&hl.png"
 
+# Generate colors vector
+cols <- c(rep("gray45", nrow(cit)-1), "gray75")
+
 # Draw plot
 png(file_name, width = 1000, height = 500, res = 150)
 ggplot(cit, aes(x = year, y = cites)) +
-  geom_bar(stat='identity', fill = "gray45", color = "gray45") +
+  geom_bar(stat='identity', fill = cols, color = cols) +
   stat_smooth(
     data = cit[-nrow(cit),], # remove current year
     se = F, 
